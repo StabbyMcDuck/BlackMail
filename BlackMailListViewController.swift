@@ -34,4 +34,8 @@ class BlackMailListViewController: UIViewController, UITableViewDataSource, UITa
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("friendListToFriendDetailSegue", sender: self)
+    }
 }
